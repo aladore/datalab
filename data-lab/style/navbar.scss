@@ -1,0 +1,83 @@
+.ocealia-data-lab-widget {
+  position: relative;
+  /* $NAVABAR */
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    height: $navbar-height;
+    border-radius: 0;
+    box-shadow: $shadow;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+
+      .navbar-brand-label {
+        font-weight: 800;
+        font-size: 31px;
+      }
+    }
+  }
+}
+
+
+.dataLab-home-sticker {
+  left: 135px;
+  position: absolute;
+  .btn {
+    font-size: 13px;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 13px;
+    transition: 0.2s ease-in all;
+    transform: translateY(-13px);
+    &:hover {
+      transform: translateY(0px);
+    }
+  }
+}
+
+/* $NAVBAR Outside*/
+.dataLab-globalFilter_hide {
+  &:hover {
+    transform: translateY(-90%)!important;
+  }
+}
+.dataLab-globalFilter {
+  position: absolute;
+  right: 0;
+  top: $navbar-height;
+  width: 25%;
+  transition: 0.3s ease-in-out all;
+  z-index: 99;
+  &.dataLab-globalFilter_hide {
+    transform: translateY(-88%);
+  }
+  .dataLab-globalFilter-map {
+    transition: 0.3s ease-in all;
+    cursor: pointer;
+    &:hover {
+      .dataLab-globalFilter-map-caption img {
+        filter: brightness(0.6);
+      }
+    }
+    .dataLab-globalFilter-map-caption {
+      img {
+        transition: 0.3s ease-in all;
+        filter: brightness(0.8);
+      }
+      .dataLab-globalFilter-map-caption-marker {
+        font-size: 55px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

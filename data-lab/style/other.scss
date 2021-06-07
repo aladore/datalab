@@ -1,0 +1,39 @@
+.ocealia-data-lab-widget {
+  .rounded-2 {
+    border-radius: 8px;
+  }
+  .panel-default {
+    border: none;
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  .c-pointer {
+    cursor: pointer;
+  }
+  .progress-bar-text {
+    z-index: 9;
+    margin-top: 3px;
+  }
+  .separator {
+    background: $white;
+    height: 1px;
+    padding: 0;
+  }
+  .dataLab-panel-IFT {
+    background: $grey;
+    div {
+      flex: 1;
+    }
+    .dataLab-IFT-plot-text {
+      line-height: 16px;
+    }
+    .dataLab-panel-IFT-data {
+      .card-title {
+        font-size: 26px;
+      }
+    }
+  }
+}

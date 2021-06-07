@@ -1,0 +1,61 @@
+.ocealia-data-lab-widget {
+  .card{
+    box-shadow: none;
+    border: 0;
+    border-radius: $card-radius;
+    overflow: auto;
+    font-size: 15px;
+    &.card_account-data {
+      margin-top: -21px;
+      .card_account-data-info {
+        transition: 0.3s ease-in all;
+        flex: 1;
+        .card-title {
+          font-size: 25px;
+        }
+      }
+    }
+    &.card_account {
+      z-index: 99;
+      .card_account-username {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 80%;
+          height: 1px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          background: $secondary-color;
+        }
+      }
+    }
+    .card-header {
+      border-bottom: 0;
+      font-weight: bold;
+      &.card-header_graph {
+        overflow: hidden;
+        .card-header-title {
+          flex: 3;
+        }
+        .card-header-button {
+          flex: 1;
+          text-align: center;
+          margin: -8px -13px;
+          padding: 8px 21px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: 0.3s ease-in-out background-color;
+
+          &.bg-secondary {
+            &:hover {
+              background-color: darken($secondary-color, 8%) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

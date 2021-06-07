@@ -1,0 +1,23 @@
+.ocealia-data-lab-widget {
+  body {
+    font-size: $text-md;
+  }
+  &:after {
+    content: '';
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(78,73,31);
+    background: linear-gradient(-45deg, rgba(78,73,31,1) 0%, rgba(101,93,16,1) 30%, rgba(123,149,13,1) 50%, rgba(238,220,44,1) 80%, rgba(255,248,185,1) 100%);
+    z-index: -1;
+    display: block;
+  }
+  a {
+    color: #fff!important;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

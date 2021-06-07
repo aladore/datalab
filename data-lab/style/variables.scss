@@ -1,0 +1,43 @@
+/* $COLORS */
+$primary-color : #3D7B60;
+$secondary-color: #FCB316;
+$terciary-color: #98242d;
+$grey: #F2F2F2;
+$white: #fff;
+
+$text: #333;
+
+$text-sm: 12px;
+$text-md: 14px;
+$text-lg: 17px;
+$text-xxl: 45px;
+
+$body-color: $text;
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "terciary": $terciary-color
+);
+
+.bg-primary {
+  background: $primary-color;
+}
+.bg-secondary {
+  background: $secondary-color;
+}
+.bg-terciary {
+  background: $terciary-color;
+}
+
+/* $CARDS */
+$card-radius: 10px;
+/*$SHADOW*/
+$shadow : 0px 5px 13px rgba(0,0,0,.2);
+/*$NAVBAR*/
+$navbar-height : 89px;
+
+.collapse:not(.show).in,
+.modal:not(.show).in{
+  opacity: 1;
+  display: block!important;
+}
